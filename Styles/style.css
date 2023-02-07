@@ -1,0 +1,114 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;/*para cambiar la fuente del titulo*/ 
+    background-color: #fff ;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header{
+    background: #7AB3A1 ;
+    opacity: 0.9;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    border-bottom: #7AB3A1 2px outset;
+}
+
+.header img{
+    align-items: center;
+    height: 5em;    /*el tamaño del logo*/
+}
+
+.flex-container{
+    display: flex; /*para aplicar la funcion flex*/
+    align-items: flex-end; /*aliniar items al final de su tamaño osea abajo*/
+    justify-content: space-evenly; /*ajusta los div a los laterales*/
+    
+}
+
+.flex-container a{
+    display: flex;
+    color: #2F1C6A;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+
+.imagen{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.container1 {
+    color: #2F1C6A; /*para cambiar el color*/
+    font-size: 20px; /*cambiar el tamaño del titulo*/
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.container2{
+    margin: 10px;
+    border: black  20px;
+    border-radius: 7px; /*poner los marcos redondos*/
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.container2 h2{
+    color: #2F1C6A; /*para cambiar el color*/
+}
+
+.footerhr{
+    margin-top: 120px;
+}
+
+.footer{
+    position: relative;
+    margin-top: -10px;
+    width: 100%;
+    padding: 20px;
+    clear: both;
+    color: grey;
+}
+
+.boton{
+    text-align: center;
+    
+    width: 100px;
+    font-weight: 700;
+    background-color: #7AB3A1;
+    border-radius: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    -webkit-transition: font-size 0.6s ease;
+    transition: font-size 0.6s ease;
+}
+
+.boton a{
+    text-decoration: none;
+}
+
+.boton:hover{
+    font-size: 30px;
+}
+
+
+.botonheader{
+    -webkit-transition: font-size 0.6s ease;
+    transition: font-size 0.6s ease;
+}
+
+.botonheader:hover{
+    font-size: 30px;
+}
+
+@media (max-width: 1000px){
+    .flex-container{
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+    <title> Projecto_1</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="flex-container">
+            <div class="imagenes"><div class="botonheader"><a href="./index.html"><img title="Volver al inicio" src="./Images/logo.png" alt=""></a></div></div>     
+            <div class="botonheader"><a href="./tutorial.html" title="Como jugar">Tutorial</a></div>
+            <div  class="botonheader"><a href="./equipo.html" title="Sobre nosotros">Equipo</a></div>
+            <div  class="botonheader"><a href="./documentacion.html" title="Como resolvimos los problemas">Documentación</a></div>
+        </div>    
+    </div>
+
+    <div class="container1">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>¿Cómo resolvimos los problemas?</h1>   
+    </div>
+    
+    <div class="container2">
+        <h2>Lógica de juego de la banca</h2>
+        <p>La banca debe de esperar a que todos los jugadores terminen de jugar. </p>
+        <img class="imagen" src="./Images/m3_1.png" alt="">
+        <p>Si todos los jugadores se han sobrepasado de 7.5 la banca no jugará y recibirá automáticamente las apuestas de todos los jugadores.        </p>
+        <img class="imagen" src="./Images/m3_2.png" alt="">
+        <p>Si quedan jugadores que no hayan sobrepasado de 7.5 la banca recibirá su primera carta.
+            Si la banca cuenta con puntos suficientes para pagar a los jugadores jugará según el tipo de jugador que sea.                    </p>
+        <img class="imagen" src="./Images/m3_3.png" alt="">
+        <p>Si la banca no cuenta con puntos suficientes para pagar la apuesta recibirá una carta más sea cual sea el riesgo.
+        </p>
+        <img class="imagen" src="./Images/m3_4.png" alt="">
+        <p>Una vez finalizada la ronda se reparten las apuestas y se comprueba si algún jugador califica para banca.</p>
+        <img class="imagen" src="./Images/m3_5.png" alt="">
+        <p>Si la banca se queda sin puntos y no hay ningún candidato a la banca cederá su puesto al primero en orden de prioridad.</p>
+        <img class="imagen" src="./Images/m3_6.png" alt="">
+        <p>Si hay un candidato o más cederá la banca al primero en orden de prioridad.</p>
+        <img class="imagen" src="./Images/m3_7.png" alt="">
+        <br>
+        <h2>Lógica del juego como bot</h2>
+        <p>Un bot pedirá cartas solo si el riesgo de pasarse es inferior al establecido por su tipo de jugador.
+        </p>
+        <img class="imagen" src="./Images/m3_8.png" alt="">
+        <p>Establecimiento de la prioridad inicial de los jugadores y cada jugador recibirá una carta aleatoria.</p>
+        <img class="imagen" src="./Images/m3_9.png" alt="">
+        <p>Las cartas serán comparadas y se ordenarán de mayor a menor.        </p>
+        <img class="imagen" src="./Images/m3_10.png" alt="">
+        <p>Si hay más de una carta con el mismo valor se ordenará según el orden de prioridad de la carta.</p>
+        <img class="imagen" src="./Images/m3_11.png" alt="">
+        <br>
+        <h2>Inserción en BBDD de las tablas cardgame, player_round, player_round_game</h2>
+        <p>Para la tabla cardgame se crea un diccionario que almacenará los datos de la partida.</p>
+        <img class="imagen" src="./Images/m3_12.png" alt="">
+        <p>Para la tabla player_round se crea un diccionario que se actualizará al inicio y al final de la ronda.</p>
+        <img class="imagen" src="./Images/m3_13.png" alt="">
+        <img class="imagen" src="./Images/m3_14.png" alt="">
+        <p>La tabla player_round_game está almacenada en un diccionario que se actualiza al inicio y al final de la ronda.</p>
+        <img class="imagen" src="./Images/m3_15.png" alt="">
+        <img class="imagen" src="./Images/m3_16.png" alt="">
+    </div>
+
+    <hr class="footerhr">
+    <div class="footer">
+        <p>©2023 proyecto</p>
+    </div>
+
+</body>
+</html>
